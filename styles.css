@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+main {
+  height: 100vh;
+}
+
+.upper-container {
+  background-image: url(/images/bg-main-mobile.png);
+}
+
+.cards {
+  height: 233px;
+}
+
+.card-back {
+  width: 270px;
+  height: 150px;
+}
+
+.card-front {
+  width: 270px;
+  height: 150px;
+  background-image: url(/images/bg-card-front.png);
+}
+
+input {
+  width: 90vw;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.error {
+  display: none;
+}
+
+.active {
+  display: none;
+}
