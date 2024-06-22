@@ -1916,7 +1916,7 @@ video {
 }
 
 .bg-image-small {
-  background-image: url('/images/bg-main-mobile.png');
+  background-image: url('./images/bg-main-mobile.png');
 }
 
 .decoration-slice {
@@ -2682,7 +2682,7 @@ video {
   }
 
   .sm\:bg-image-large {
-    background-image: url('/images/bg-main-desktop.png');
+    background-image: url('./images/bg-main-desktop.png');
   }
 
   .sm\:p-0 {
