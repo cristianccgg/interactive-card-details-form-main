@@ -40,7 +40,11 @@ form,
 }
 
 .info {
-  font-size: 0.2rem !important;
+  font-size: 0.5rem !important;
+}
+
+.name {
+  font-size: 10px !important;
 }
 
 .error {

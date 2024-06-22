@@ -19,20 +19,20 @@
     <div class="upper-container bg-cover sm:col-span-1 sm:flex sm:items-center row-span-1 sm:h-full bg-image-small sm:bg-image-large">
       
         <div class="tarjetas relative w-full h-full mt-8 sm:mt-0 sm:h-96">
-          <div class="card-back rounded-md absolute top-0 right-5 sm:top-64 sm:-right-0  lg:-right-24 xl:-right-36 sm:scale-150">
+          <div class="card-back rounded-md absolute top-0 right-5 sm:top-64 sm:right-14 md:-right-16  lg:-right-24 xl:-right-48 sm:scale-100 md:scale-110 lg:scale-150">
               <img class="img" src="./images/bg-card-back.png">
           </div>
-          <div class="card-front  absolute left-5 bottom-0 sm:-left-14 md:left-0 lg:left-36 xl:left-60 sm:-top-0 sm:scale-150 text-white rounded-lg flex flex-col justify-between p-5">
+          <div class="card-front  absolute left-5 bottom-0 sm:-left-0 md:left-16 lg:left-20 xl:left-56 sm:-top-0 sm:scale-100 md:scale-110 lg:scale-150 text-white rounded-lg flex flex-col justify-between p-5">
               <div class="circles">
                   <div class="flex gap-3 items-center">
                       <div class="big-circle rounded-full bg-white w-8 h-8"></div>
                       <div class="small-circle rounded-full w-4 h-4 border-2"></div>
                   </div>
               </div>
-              <div class="flex flex-col gap-3">
+              <div class="flex flex-col gap-1 text-xs">
                   <div id="card-numbers">0000 0000 0000 0000</div>
                   <div class="info flex justify-between">
-                      <span id="card-name">JANE APPLESEED</span>
+                      <span class="name"  id="card-name">JANE APPLESEED</span>
                       <div>
                           <span id="card-month">00</span>/<span id="card-year">00</span>
                       </div>
@@ -44,7 +44,7 @@
   </div>
   
     
-      <form id="form" class=" sm:col-span-2 sm:mx-auto sm:h-ful flex flex-col p-5 sm:p-0 justify-evenly " action="#">
+      <form id="form" class="mt-3 sm:col-span-2 sm:mx-auto sm:h-ful flex flex-col p-5 sm:p-0 justify-evenly " action="#">
         <div class="flex flex-col">
           <label  for="cardholder">Cardholder Name</label><input id="cardholder" class="border" type="text" placeholder="e.g. Jane Appleseed"></input>
           <span class="error text-Red-input-errors text-xs">Please fill up this field</span>
@@ -80,9 +80,9 @@
         
       </form>
       
-      <div id="message" class="active row-span-2 p-5 flex flex-col items-center justify-evenly ">
+      <div id="message" class="active row-span-2 sm:col-span-2 sm:mx-auto sm:h-ful p-5 flex flex-col items-center justify-evenly">
       
-        <img class="animate-bounce h-20 w-20" src="./images/icon-complete.svg">
+        <img class="h-20 w-20" src="./images/icon-complete.svg">
         <h1 class="thank-you-text">Thank you!</h1>
         We've added your card details
         <button id="continue-btn" type="submit" class="p-3 border rounded-lg bg-Very-dark-violet text-white w-full">Continue</button>
