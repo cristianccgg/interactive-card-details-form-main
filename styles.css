@@ -1,25 +1,24 @@
 * {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
 }
 
 main {
   height: 100vh;
 }
 
-.cards {
-  height: 14.563rem;
+.upper-container {
+  width: 20rem;
 }
 
-.card-back {
-  width: 18em;
-  height: 10em;
+.img {
+  width: 16em;
+  height: 8em;
 }
 
 .card-front {
-  width: 18em;
-  height: 10em;
+  width: 16em;
+  height: 8em;
   background-image: url(/images/bg-card-front.png);
 }
 
@@ -34,9 +33,10 @@ input {
   justify-content: space-between;
 }
 
-form {
+form,
+#message {
   height: 25em;
-  width: 25rem;
+  width: 20rem;
 }
 
 .info {
@@ -53,11 +53,4 @@ form {
 
 .active {
   display: none;
-}
-
-@media (min-width: 640px) {
-  .sm\:right-3 {
-    right: 0.75rem; /* Ajusta según necesites */
-  }
-  /* Añade más ajustes según sea necesario */
 }

@@ -19,6 +19,10 @@ module.exports = {
         "image-small": "url('/images/bg-main-mobile.png')",
         "image-large": "url('/images/bg-main-desktop.png')",
       }),
+      inset: {
+        "bottom-96": "24rem", // Por ejemplo, 24rem es equivalente a 96 unidades de altura del documento
+        "bottom-128": "28rem",
+      },
     },
   },
   plugins: [],
