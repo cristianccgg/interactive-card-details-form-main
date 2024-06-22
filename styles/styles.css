@@ -19,7 +19,7 @@ main {
 .card-front {
   width: 16em;
   height: 8em;
-  background-image: url(./images/bg-card-front.png);
+  background-image: url(images/bg-card-front.png);
 }
 
 input {
