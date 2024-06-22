@@ -16,27 +16,31 @@
 
   <main class="grid grid-rows-3 sm:grid-cols-3 sm:items-center sm:grid-rows-1 justify-center">
     
-    <div class="upper-container relative sm:col-span-1 sm:flex sm:items-center row-span-1 sm:h-full bg-image-small sm:bg-image-large">
-               
-      <div class="cards">
-        <div class="card-back absolute right-8 top-8 sm:top-96 sm:-right-3 md:-right-16 lg:-right-32 rounded-md"><img src="./images/bg-card-back.png"></div>
-        <div class="card-front absolute -bottom-8 left-8 text-white rounded-lg flex flex-col justify-between p-5 ">
-          <div class="circles">
-            <div class="flex gap-3 items-center">
-              <div class="big-circle rounded-full bg-white w-8 h-8"></div>
-              <div class="small-circle rounded-full  w-4 h-4 border-2"></div>
-            </div>
-          </div>
-          <div class="flex flex-col gap-3">
-            <div id="card-numbers">0000 0000 0000 0000</div>
-            <div class="info flex justify-between">
-              <span id="card-name">JANE APPLESEED</span>
-              <div><span id="card-month">00</span>/<span id="card-year">00</span></div>
-            </div>
-          </div>
+    <div class="upper-container  relative bg-cover sm:col-span-1 sm:flex sm:items-center row-span-1 sm:h-full bg-image-small sm:bg-image-large">
+      
+        <div class="card-back absolute right-8 top-8 sm:top-96 sm:-right-3 md:-right-16 lg:-right-32 rounded-md">
+            <img src="./images/bg-card-back.png">
         </div>
-      </div>
-    </div>
+        <div class="card-front absolute top-28 right-20 sm:-right-8 sm:top-40 text-white rounded-lg flex flex-col justify-between p-5">
+            <div class="circles">
+                <div class="flex gap-3 items-center">
+                    <div class="big-circle rounded-full bg-white w-8 h-8"></div>
+                    <div class="small-circle rounded-full w-4 h-4 border-2"></div>
+                </div>
+            </div>
+            <div class="flex flex-col gap-3">
+                <div id="card-numbers">0000 0000 0000 0000</div>
+                <div class="info flex justify-between">
+                    <span id="card-name">JANE APPLESEED</span>
+                    <div>
+                        <span id="card-month">00</span>/<span id="card-year">00</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+      
+  </div>
+  
     
       <form id="form" class="sm:col-span-2 sm:mx-auto sm:h-ful flex flex-col p-5 sm:p-0 justify-evenly mt-10 sm:mt-0" action="#">
         <div class="flex flex-col">
@@ -57,8 +61,8 @@
             <div class="dates col-span-1 flex flex-col">
                 <label for="month">Exp. Date (MM/YY)</label>
                 <div id="date" class="flex justify-between gap-3">
-                    <input id="month" class="border w-full" type="number" placeholder="MM" min="1" max="12">
-                    <input id="year" class="border w-full" type="number" placeholder="YY" min="24">
+                    <input id="month" class="border w-full"  placeholder="MM" min="1" max="12">
+                    <input id="year" class="border w-full"  placeholder="YY" min="24">
                 </div>
                 <span class="error text-Red-input-errors text-xs">Can't be blank</span>
             </div>
@@ -92,5 +96,5 @@
     </div> -->
   </main>
 </body>
-<script src="./main.js"></script>
+<script src="/main.js"></script>
 </html>

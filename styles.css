@@ -54,16 +54,10 @@ form {
 .active {
   display: none;
 }
-/* 
-@media screen and (min-width: 640px) {
-  .card-back {
-    width: 11em;
-    height: 5em;
-  }
 
-  .card-front {
-    width: 18em;
-    height: 10em;
-    background-image: url(/images/bg-card-front.png);
+@media (min-width: 640px) {
+  .sm\:right-3 {
+    right: 0.75rem; /* Ajusta según necesites */
   }
-} */
+  /* Añade más ajustes según sea necesario */
+}
