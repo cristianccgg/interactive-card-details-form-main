@@ -663,10 +663,6 @@ video {
   bottom: 0px;
 }
 
-.bottom-96 {
-  bottom: 24rem;
-}
-
 .end-1 {
   inset-inline-end: 0.25rem;
 }
@@ -1916,7 +1912,7 @@ video {
 }
 
 .bg-image-small {
-  background-image: url('/images/bg-main-mobile.png');
+  background-image: url(/images/bg-main-mobile.png);
 }
 
 .decoration-slice {
@@ -2682,7 +2678,7 @@ video {
   }
 
   .sm\:bg-image-large {
-    background-image: url('/images/bg-main-desktop.png');
+    background-image: url(/images/bg-main-desktop.png);
   }
 
   .sm\:p-0 {

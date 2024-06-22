@@ -16,13 +16,9 @@ module.exports = {
         "Very-dark-violet": "hsl(278, 68%, 11%)",
       },
       backgroundImage: (theme) => ({
-        "image-small": "url('/images/bg-main-mobile.png')",
-        "image-large": "url('/images/bg-main-desktop.png')",
+        "image-small": "url(/images/bg-main-mobile.png)",
+        "image-large": "url(/images/bg-main-desktop.png)",
       }),
-      inset: {
-        "bottom-96": "24rem",
-        "bottom-128": "28rem",
-      },
     },
   },
   plugins: [],
