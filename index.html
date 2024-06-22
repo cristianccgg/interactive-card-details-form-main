@@ -6,18 +6,21 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="./output.css" rel="stylesheet">
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="./styles.css">
   
   <title>Interactive card details form</title>
+</head>
 
  
 <body>
 
-  <main class="grid grid-rows-3 ">
-    <div class="upper-container" style="background-image: url(/images/bg-main-mobile.png);">           
-      <div class="cards relative w-80 mx-auto my-8">
-        <div class="card-back absolute top-0 right-0 rounded-md"><img src="./images/bg-card-back.png"></div>
-        <div class="card-front absolute bottom-0 text-white rounded-lg flex flex-col justify-between p-5 border">
+  <main class="grid grid-rows-3 sm:grid-cols-3 sm:items-center sm:grid-rows-1 justify-center">
+    
+    <div class="upper-container relative sm:col-span-1 sm:flex sm:items-center row-span-1 sm:h-full bg-image-small sm:bg-image-large">
+               
+      <div class="cards">
+        <div class="card-back absolute right-8 top-8 sm:top-96 sm:-right-3 md:-right-16 lg:-right-32 rounded-md"><img src="./images/bg-card-back.png"></div>
+        <div class="card-front absolute -bottom-8 left-8 text-white rounded-lg flex flex-col justify-between p-5 ">
           <div class="circles">
             <div class="flex gap-3 items-center">
               <div class="big-circle rounded-full bg-white w-8 h-8"></div>
@@ -34,41 +37,43 @@
         </div>
       </div>
     </div>
-    <form id="form" class="flex flex-col row-span-2 p-5 justify-evenly mt-10" action="#">
-      <div class="flex flex-col">
-        <label  for="cardholder">Cardholder Name</label><input id="cardholder" class="border" type="text" placeholder="e.g. Jane Appleseed"></input>
-        <span class="error text-Red-input-errors text-xs">Please fill up this field</span>
-      </div>
     
-      
+      <form id="form" class="sm:col-span-2 sm:mx-auto sm:h-ful flex flex-col p-5 sm:p-0 justify-evenly mt-10 sm:mt-0" action="#">
         <div class="flex flex-col">
-          <label for="card-number">
-            Card Number</label>
-            <input id="card-number" class="border" type="text" placeholder="e.g. 1234 5678 9123 0000"></input>
-            <span class="error text-Red-input-errors text-xs">Wrong format, numbers only</span>
+          <label  for="cardholder">Cardholder Name</label><input id="cardholder" class="border" type="text" placeholder="e.g. Jane Appleseed"></input>
+          <span class="error text-Red-input-errors text-xs">Please fill up this field</span>
         </div>
+      
+      
+          <div class="flex flex-col">
+            <label for="card-number">
+              Card Number</label>
+              <input id="card-number" class="border" type="text" placeholder="e.g. 1234 5678 9123 0000"></input>
+              <span class="error text-Red-input-errors text-xs">Wrong format, numbers only</span>
+          </div>
+      
+      
+          <div id="prueba-grid" class="date-cvc-container ">
+            <div class="dates col-span-1 flex flex-col">
+                <label for="month">Exp. Date (MM/YY)</label>
+                <div id="date" class="flex justify-between gap-3">
+                    <input id="month" class="border w-full" type="number" placeholder="MM" min="1" max="12">
+                    <input id="year" class="border w-full" type="number" placeholder="YY" min="24">
+                </div>
+                <span class="error text-Red-input-errors text-xs">Can't be blank</span>
+            </div>
+      
+            <div class="cvc col-span-1 flex flex-col">
+                <label for="cvc">CVC</label>
+                <input id="cvc" class="border" type="number" placeholder="e.g. 123">
+                <span class="error text-Red-input-errors text-xs">Can't be blank</span>
+            </div>
+          </div>
         
+        <button type="submit" class="p-3 border rounded-lg bg-Very-dark-violet text-white">Confirm</button>
+      </form>
+      
     
-        <div id="prueba-grid" class="date-cvc-container ">
-          <div class="dates col-span-1 flex flex-col">
-              <label for="month">Exp. Date (MM/YY)</label>
-              <div id="date" class="flex justify-between gap-3">
-                  <input id="month" class="border w-full" type="number" placeholder="MM" min="1" max="12">
-                  <input id="year" class="border w-full" type="number" placeholder="YY" min="24">
-              </div>    
-              <span class="error text-Red-input-errors text-xs">Can't be blank</span>      
-          </div>
-                  
-          <div class="cvc col-span-1 flex flex-col">
-              <label for="cvc">CVC</label>
-              <input id="cvc" class="border w-fit" type="number" placeholder="e.g. 123">
-              <span class="error text-Red-input-errors text-xs">Can't be blank</span>
-          </div>
-      </div>
-        
-      </div>
-      <button type="submit" class="p-3 border rounded-lg bg-Very-dark-violet text-white">Confirm</button>
-    </form>
     
     <!------Thank you message -------->
     

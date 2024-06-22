@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .force-inclusion {
+    @apply grid flex md:flex-col lg:flex-row;
+  }
+}
